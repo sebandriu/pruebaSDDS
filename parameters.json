@@ -1,0 +1,129 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "subscriptionId": {
+            "value": "5da87228-993d-4236-a76a-7a95c688dd6e"
+        },
+        "name": {
+            "value": "gestordecitasdemo"
+        },
+        "location": {
+            "value": "East US 2"
+        },
+        "hostingPlanName": {
+            "value": "ASP-adm-8860"
+        },
+        "serverFarmResourceGroup": {
+            "value": "adm"
+        },
+        "databaseName": {
+            "value": "members"
+        },
+        "ftpsState": {
+            "value": "FtpsOnly"
+        },
+        "sku": {
+            "value": "Basic"
+        },
+        "skuCode": {
+            "value": "B1"
+        },
+        "workerSize": {
+            "value": ""
+        },
+        "workerSizeId": {
+            "value": ""
+        },
+        "numberOfWorkers": {
+            "value": "1"
+        },
+        "linuxFxVersion": {
+            "value": "PHP|8.0"
+        },
+        "storageSizeGB": {
+            "value": 20
+        },
+        "backupRetentionDays": {
+            "value": 7
+        },
+        "geoRedundantBackup": {
+            "value": "Disabled"
+        },
+        "vmName": {
+            "value": "Standard_B1ms"
+        },
+        "storageAutogrow": {
+            "value": "Enabled"
+        },
+        "storageIops": {
+            "value": 700
+        },
+        "publicNetworkAccess": {
+            "value": "Disabled"
+        },
+        "serverEdition": {
+            "value": "Burstable"
+        },
+        "vCores": {
+            "value": 2
+        },
+        "serverName": {
+            "value": "gestordecitasdemo-server"
+        },
+        "serverUsername": {
+            "value": "dptkvmzuil"
+        },
+        "serverPassword": {
+            "value": null
+        },
+        "collation": {
+            "value": "utf8_general_ci"
+        },
+        "charset": {
+            "value": "utf8"
+        },
+        "isVnetEnabled": {
+            "value": true
+        },
+        "isPrivateEndpointForAppEnabled": {
+            "value": false
+        },
+        "vnetName": {
+            "value": "gestordecitasdemoVnet"
+        },
+        "privateEndpointSubnet": {
+            "value": "gestordecitasdemoSubnet"
+        },
+        "subnetForApp": {
+            "value": "gestordecitasdemoAppSubnet"
+        },
+        "subnetForDb": {
+            "value": "gestordecitasdemoDbSubnet"
+        },
+        "privateEndpointNameForApp": {
+            "value": "gestordecitasdemoAppEndpoint"
+        },
+        "privateEndpointNameForDb": {
+            "value": ""
+        },
+        "privateEndpointNameForCache": {
+            "value": "gestordecitasdemo-cache-privateEndpoint"
+        },
+        "privateDnsZoneNameForApp": {
+            "value": "privatelink.azurewebsites.net"
+        },
+        "privateDnsZoneNameForDb": {
+            "value": "privatelink.mysql.database.azure.com"
+        },
+        "privateDnsZoneNameForCache": {
+            "value": "privatelink.redis.cache.windows.net"
+        },
+        "isCacheEnabled": {
+            "value": false
+        },
+        "cacheName": {
+            "value": "gestordecitasdemo-cache"
+        }
+    }
+}
