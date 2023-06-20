@@ -1,12 +1,12 @@
 <?php
-$host = "gestordecitasdemo-server.mysql.database.azure.com";
-$username = "dptkvmzuil";
-$pw = "Z5UE64DVF78R082Y$";
-$db_name = "members";
-$port = "3306";
-$flag = "MYSQLI_CLIENT_SSL";
+$AZURE_MYSQL_DBCONNECT_HOST = "gestordecitasdemo-server.mysql.database.azure.com";
+$AZURE_MYSQL_DBCONNECT_USERNAME = "dptkvmzuil";
+$AZURE_MYSQL_DBCONNECT_PASSWORD = "Z5UE64DVF78R082Y$";
+$AZURE_MYSQL_DBCONNECT_DBNAME = "members";
+$AZURE_MYSQL_DBCONNECT_PORT = "3306";
+$AZURE_MYSQL_DBCONNECT_FLAG = "MYSQLI_CLIENT_SSL";
 
-$conn = new mysqli($host, $username, $pw, $db_name, $port, $flag);
+$conn = new mysqli($AZURE_MYSQL_DBCONNECT_HOST, $AZURE_MYSQL_DBCONNECT_USERNAME, $AZURE_MYSQL_DBCONNECT_PASSWORD, $AZURE_MYSQL_DBCONNECT_DBNAME, $AZURE_MYSQL_DBCONNECT_PORT, $AZURE_MYSQL_DBCONNECT_FLAG);
 if (!$conn) {
    die('Database connection failed');
 }
