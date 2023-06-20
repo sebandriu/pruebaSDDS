@@ -1,5 +1,5 @@
 <?php
-require_once('db-connect.php');
+require_once('defaultConnector.php');
 $action = isset($_GET['action']) ? $_GET['action'] : ''; 
 
 /**
@@ -120,3 +120,4 @@ if(!empty($action)){
     $resp['error'] = 'Action must not be empty';
     return $resp;
 }
+?>
