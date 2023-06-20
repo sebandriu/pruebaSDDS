@@ -1,5 +1,5 @@
 <?php
-$host = "20.119.144.14";
+$host = "gestordecitasdemo-server.mysql.database.azure.com";
 $username = "dptkvmzuil";
 $pw = "Z5UE64DVF78R082Y$";
 $db_name = "members";
