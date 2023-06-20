@@ -13,7 +13,7 @@ if (!$conn) {
 }*/
 
 $conn = mysqli_init();
-mysqli_ssl_set($conn,NULL,NULL, "DigiCertGlobalRootCA.crt.pem", NULL, NULL);
+mysqli_ssl_set($conn,NULL,NULL, "/certificado/ca.pem", NULL, NULL);
 mysqli_real_connect($conn, "gestordecitasdemo-server.mysql.database.azure.com", "dptkvmzuil", "Z5UE64DVF78R082Y$", "members", 3306, MYSQLI_CLIENT_SSL);
 if (!$conn) {
    die('Database connection failed');
