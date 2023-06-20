@@ -1,5 +1,5 @@
 <?php
-require_once('defaultConnector.php');
+require_once('db-connect.php');
 $action = isset($_GET['action']) ? $_GET['action'] : ''; 
 
 /**
