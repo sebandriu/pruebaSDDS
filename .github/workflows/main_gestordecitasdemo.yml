@@ -56,5 +56,5 @@ jobs:
         with:
           app-name: 'gestordecitasdemo'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_76042176469949DABF9FD0D7510D7958 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_A6E2C31C09E144B7BF33DA37A412A8A9 }}
           package: .
