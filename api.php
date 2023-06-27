@@ -8,7 +8,7 @@ $action = isset($_GET['action']) ? $_GET['action'] : '';
 
 function get_data(){
     global $conn;
-    $sql = "SELECT * FROM `id20972116_members` order by `id` asc";
+    $sql = "SELECT * FROM `members` order by `id` asc";
 
     $qry = $conn->query($sql);
     $data = [];
@@ -39,7 +39,7 @@ function save_member(){
         $comentario = addslashes($conn->real_escape_string($_POST['comentario']));
         $contact = addslashes($conn->real_escape_string($_POST['contact']));
         if(empty($id) || !is_numeric($id)){
-            $sql = "INSERT INTO `id20972116_members` (`name`, `contact`, `comentario`)
+            $sql = "INSERT INTO `members` (`name`, `contact`, `comentario`)
                 VALUES ('{$name}', '{$contact}', '{$comentario}')";
         }else{
             $sql = "UPDATE `id20972116_members` set `name` = '{$name}', `contact` = '{$contact}', `comentario` = '{$comentario}' where `id` = '{$id}' ";
@@ -66,7 +66,7 @@ function get_single(){
     global $conn;
     if($_SERVER['REQUEST_METHOD'] == 'POST'){
         $id = $_POST['id'];
-        $sql = "SELECT * FROM `id20972116_members` where id = '{$id}'";
+        $sql = "SELECT * FROM `members` where id = '{$id}'";
         $get = $conn->query($sql);
         if($get->num_rows > 0){
             $resp['status'] = 'success';
@@ -90,7 +90,7 @@ function delete_member(){
     global $conn;
     if($_SERVER['REQUEST_METHOD'] == 'POST'){
         $id = $_POST['id'];
-        $sql = "DELETE FROM `id20972116_members` where id = '{$id}'";
+        $sql = "DELETE FROM `members` where id = '{$id}'";
         $delete = $conn->query($sql);
         if($delete){
             $resp['status'] = 'success';
