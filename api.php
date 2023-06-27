@@ -42,7 +42,7 @@ function save_member(){
             $sql = "INSERT INTO `members` (`name`, `contact`, `comentario`)
                 VALUES ('{$name}', '{$contact}', '{$comentario}')";
         }else{
-            $sql = "UPDATE `id20972116_members` set `name` = '{$name}', `contact` = '{$contact}', `comentario` = '{$comentario}' where `id` = '{$id}' ";
+            $sql = "UPDATE `members` set `name` = '{$name}', `contact` = '{$contact}', `comentario` = '{$comentario}' where `id` = '{$id}' ";
         }
         $save = $conn->query($sql);
         if($save){
