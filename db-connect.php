@@ -14,7 +14,17 @@ $AZURE_MYSQL_PORT = "3306";
 $AZURE_MYSQL_FLAG = "MYSQLI_CLIENT_SSL";*/
 
 
-$conn = new mysqli($AZURE_MYSQL_HOST, $AZURE_MYSQL_USERNAME, $AZURE_MYSQL_PASSWORD, $AZURE_MYSQL_DBNAME, $AZURE_MYSQL_PORT, $AZURE_MYSQL_FLAG);
+/*$conn = new mysqli($AZURE_MYSQL_HOST, $AZURE_MYSQL_USERNAME, $AZURE_MYSQL_PASSWORD, $AZURE_MYSQL_DBNAME, $AZURE_MYSQL_PORT, $AZURE_MYSQL_FLAG);
+if (!$conn) {
+   die('Database connection failed');
+}*/
+
+$host = "localhost";
+$username = "root";
+$pw = "";
+$db_name = "miembros";
+
+$conn = new mysqli($host, $username, $pw, $db_name);
 if (!$conn) {
    die('Database connection failed');
 }
